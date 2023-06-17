@@ -1,0 +1,14 @@
+@use '_h-colors' as C;
+
+
+.Footer {
+    background-color: C.$c-grayishBlue;
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    font-size: .75rem;
+    padding: 1rem;
+}

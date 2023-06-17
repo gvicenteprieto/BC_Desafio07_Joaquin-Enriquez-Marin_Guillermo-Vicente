@@ -1,0 +1,60 @@
+@use '_h-colors' as C;
+
+.Header {
+    padding: .5rem;
+    margin: 5rem;
+
+    &.Header__figure {
+        margin-bottom: 5rem;
+        padding: 15rem;
+
+        & .Header__figure--logo {
+            margin-bottom: 1rem;
+        }
+
+    }
+
+    &.Header__section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        margin: 5rem 25%;
+        color: C.$c-grayishBlue;
+    }
+
+    &.Header__section--footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+
+    .Header__section--footer--button:nth-of-type(1) {
+        background-color: hsl(171, 66%, 44%);
+        border: 1px solid hsl(0, 0%, 100%);
+        border-radius: 30px;
+        color: white;
+        font-size: 1rem;
+        font-weight: 400;
+        padding: 0.5rem 2rem;
+        margin: 1rem 0;
+        cursor: pointer;
+    }
+
+    .Header__section--footer--button:nth-of-type(2) {
+        background-color: hsl(233, 100%, 69%);
+        border: 1px solid hsl(0, 0%, 100%);
+        border-radius: 30px;
+        color: white;
+        font-size: 1rem;
+        font-weight: 400;
+        padding: 0.5rem 1rem;
+        margin: 1rem 0;
+        cursor: pointer;
+    }
+
+}
