@@ -1,0 +1,10 @@
+@charset "UFT-8";
+
+@use "./_h-fonts" as F;
+
+html {
+  font-size: F.$font-size;
+  font-family: F.$font-family;
+  font-weight: F.$font-weight;
+  line-height: F.$line-height;
+}

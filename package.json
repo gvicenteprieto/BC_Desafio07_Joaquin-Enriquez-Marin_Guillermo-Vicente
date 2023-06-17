@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass --watch scr/styles.sass:public/styles.css"
+    "sass": "sass --watch src/styles.sass:public/styles.css"
   },
   "author": "joaquin-enriquez-marin_guillermo-vicente",
   "license": "ISC",
