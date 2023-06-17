@@ -7,7 +7,15 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "sass --watch src/styles.sass:public/styles.css"
   },
-  "author": "joaquin-enriquez-marin_guillermo-vicente",
+  "authors": {
+    "Joaquin Enriquez Marin": "https://github.com/Henrymarin9",
+    "Guillermo Vicente": "https://github.com/gvicenteprieto"
+  },
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gvicenteprieto/BC_Desafio07_Joaquin-Enriquez-Marin_Guillermo-Vicente.git"
+  },
   "license": "ISC",
   "dependencies": {
     "sass": "^1.63.4"
