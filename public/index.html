@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <meta name="author" content="../README.md" />
+    <meta name="description"
+        ccontent="Entrega Desafio 07 : Sass - Grid | Bootcamp Full Stack Engineer para Educacion IT" />
+    <meta name="copyright" content="Ref. to author | 2023 todos los derechos reservados" />
+    <meta name="keywords" content="HTML5, CSS3, Imágenes, Git, GitHub, SCSS, Sass, NodeJs, Grid" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./normalizer.css" />
+    <link rel="stylesheet" href="./styles.css" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+    <title>Desafio_07> Clipboard landing page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+
+        html {
+            font-size: 18px
+        }
+        body {
+            background-color: rgb(222, 223, 223);
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body class="Body">
+
+    <header class="Header">
+        <figure class="Header__figure">
+            <img src="./images/logo.svg" alt="logo" class="Header__logo" />
+        </figure>
+
+        <section class="Header__section">
+            <h1>A history of everything you copy</h1>
+            <p>
+                Clipboard allows you to track and organize everything you copy.
+                Instantly access your clipboard on all your devices.
+            </p>
+            <button class="Header__section--button">Download for iOS</button>
+            <button class="Header__section--button">Download for Mac</button>
+        </section>
+    </header>
+
+    <main class="Main">
+        <section class="Main__section">
+            <header class="Main__section--header">
+                <h2>Keep track of your snippets</h2>
+                <p>
+                    Clipboard instantly stores any item you copy in the cloud, meaning
+                    you can access your snippets immediately on all your devices. Our
+                    Mac and iOS apps will help you organize everything.
+                </p>
+            </header>
+
+            <main class="Main__section--main">
+                <figure class="Main__section--main-figure">
+                    <img src="./images/image-computer.png" width="auto" height="250px" alt="computer" />
+                </figure>
+                <article class="Main__section--main--article">
+                    <h3>Quick Search</h3>
+                    <p>
+                        Easily search your snippets by content, category, web address,
+                        application, and more.
+                    </p>
+                </article>
+                <article class="Main__section--main--article">
+                    <h3>iCloud Sync</h3>
+                    <p>Instantly saves and syncs snippets across all your devices.</p>
+                </article>
+                <article class="Main__section--main--article">
+                    <h3>Complete History</h3>
+                    <p>
+                        Retrieve any snippets from the first moment you started using the
+                        app.
+                    </p>
+                </article>
+            </main>
+        </section>
+
+        <section class="Main__section">
+            <header class="Main__section--header">
+                <h2>Access Clipboard anywhere</h2>
+                <p>
+                    Whether you’re on the go, or at your computer, you can access all
+                    your Clipboard snippets in a few simple clicks.
+                </p>
+            </header>
+
+            <main class="Main__section--main">
+                <figure class="Main__section--main--figure">
+                    <img src="./images/image-devices.png" width="auto" height="250px" alt="devices" />
+                </figure>
+                <article class="Main__section--main--article">
+                    <h3>Supercharge your workflow</h3>
+                    <p>We’ve got the tools to boost your productivity.</p>
+                </article>
+                <article class="Main__section--main--article">
+                    <h3>Clipboard for iOS</h3>
+                    <p>
+                        Available for free on the App Store. Requires iOS 12 or later.
+                    </p>
+                </article>
+                <article class="Main__section--main--article">
+                    <h3>Clipboard for Mac</h3>
+                    <p>
+                        Available for free on the App Store. Requires macOS 10.15 or
+                        later.
+                    </p>
+                </article>
+            </main>
+        </section>
+    </main>
+
+    <aside class="Aside">
+        <figure class="Aside__figure">
+            <img src="./images/logo-google.png" alt="logo-google" />
+        </figure>
+        <figure class="Aside__figure">
+            <img src="./images/logo-ibm.png" alt="logo-ibm" />
+        </figure>
+        <figure class="Aside__figure">
+            <img src="./images/logo-microsoft.png" alt="logo-microsoft" />
+        </figure>
+        <figure>
+            <img src="./images/logo-hp.png" alt="logo-hp" />
+        </figure>
+        <figure class="Aside__figure">
+            <img src="./images/logo-vector-graphics.png" alt="logo-vector-graphics" />
+        </figure>
+    </aside>
+
+    <section class="Section">
+        <header class="Section__header">
+            <h2>Clipboard for iOS and Mac OS</h2>
+            <p>
+                Available for free on the App Store. Download for Mac or iOS, sync with
+                iCloud and you’re ready to start adding to your clipboard.
+            </p>
+        </header>
+        <button class="Section__button">Download for iOS</button>
+        <button class="Section__button">Download for Mac</button>
+    </section>
+
+    <footer class="Footer">
+        <header class="Footer__header">
+            <figure class="Footer__header--figure">
+                <img src="./images/logo.svg" alt="logo" />
+            </figure>
+        </header>
+        <section class="Footer__section">
+            <p>
+                <a href="#">FAQs</a>
+            </p>
+            <p>
+                <a href="#">Contact Us</a>
+            </p>
+            <p>
+                <a href="#">Privacy Policy</a>
+            </p>
+            <p>
+                <a href="#">Press Kit</a>
+            </p>
+            <p>
+                <a href="#">Install Guide</a>
+            </p>
+        </section>
+        <nav class="Footer__nav">
+            <a href="#">
+                <img src="./images/icon-facebook.svg" alt="facebook" />
+            </a>
+            <a href="#">
+                <img src="./images/icon-twitter.svg" alt="twitter" />
+            </a>
+            <a href="#">
+                <img src="./images/icon-instagram.svg" alt="instagram" />
+            </a>
+        </nav>
+
+    </footer>
+
+    <footer>
+        <p class="attribution">
+            Challenge by
+            <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a
+                href="#">Your Name Here</a>.
+        </p>
+    </footer>
+</body>
+
+</html>
