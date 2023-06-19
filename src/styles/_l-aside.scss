@@ -1,8 +1,32 @@
+@use 'mixins' as M;
 .Aside {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 5rem;
+
+    grid-row: 3/4;
+    grid-column: 1/13;
+
+
+
+    & section{
+        &:nth-child(1){
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 5rem;
+            gap: 2rem;
+        }
+
+        &:nth-child(2){
+            & article{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                & div{
+                    @include M.component;
+                }
+            }
+        }
+
     }
+
+}

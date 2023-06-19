@@ -1,0 +1,86 @@
+@use 'mixins' as M;
+.Main{
+    grid-row: 2/3;
+    grid-column: 1/13;
+
+    & section{
+
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: auto;
+
+        & article{
+
+            & div:nth-child(1){
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                & article{
+                    @include M.titles(600px);
+                }
+            }
+            & .images{
+                scale: 2;
+                margin-top: 15rem;
+                margin-bottom: 15rem;
+            }
+
+            &:nth-child(1){
+                grid-row: 1/2;
+                grid-column: 1/13;
+
+                & div:nth-child(2){
+                    display: flex;
+                    justify-content: space-around;
+
+                    & main{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        gap: 3rem;
+                        text-align: left;
+                        
+                        & article{
+                            @include M.titles(400px);
+                        }
+                        
+                    }
+                }
+
+            }
+            &:nth-child(2){
+                grid-row: 2/3;
+                grid-column: 1/13;
+            }
+            &:nth-child(3){
+                grid-row: 3/4;
+                grid-column: 1/13;
+
+                & div:nth-child(2){
+                    margin-top: 2.5rem;
+
+                    & main{
+
+                        & section{
+                            display: flex;
+                            justify-content: space-evenly;
+                            
+                            & article{
+                                @include M.titles(400px);
+            
+                                padding: 1rem;
+
+                                & aside{
+                                    margin: 2.5rem;
+                                }
+                                
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}

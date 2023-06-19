@@ -7,3 +7,12 @@ html {
   line-height: F.$lineHeight;
   text-align: center;
 }
+
+.Body{
+
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 500px repeat(1, 1fr) repeat(2, 450px);
+  align-items: center;
+
+}
