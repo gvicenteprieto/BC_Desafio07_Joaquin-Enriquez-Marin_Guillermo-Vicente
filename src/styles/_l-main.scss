@@ -1,4 +1,6 @@
 @use 'mixins' as M;
+@use '_h-colors' as C;
+
 .Main{
     grid-row: 2/3;
     grid-column: 1/13;
