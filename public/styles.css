@@ -11,8 +11,20 @@ html {
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 500px repeat(1, 1fr);
   align-items: center;
+  background-image: url(./images/bg-header-desktop.png);
+  background-repeat: no-repeat;
 }
 
+@media screen and (max-width: 375px) {
+  .Body {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 100px repeat(1fr);
+    align-items: center;
+    background-image: url(./images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+  }
+}
 .Header {
   grid-row: 1/2;
   grid-column: 1/13;
@@ -48,6 +60,15 @@ html {
   background-color: hsl(233, 100%, 69%);
 }
 
+@media screen and (max-width: 375px) {
+  .Header {
+    grid-row: 1/2;
+    grid-column: 1/9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
 .Main {
   grid-row: 2/3;
   grid-column: 1/13;
@@ -129,6 +150,12 @@ html {
   margin: 2.5rem;
 }
 
+@media screen and (max-width: 375px) {
+  .Main {
+    grid-row: 2/3;
+    grid-column: 1/9;
+  }
+}
 .Aside {
   grid-row: 3/4;
   grid-column: 1/13;
@@ -171,6 +198,11 @@ html {
   background-color: hsl(233, 100%, 69%);
 }
 
+@media screen and (max-width: 375px) {
+  .Aside {
+    grid-column: 1/9;
+  }
+}
 .Footer {
   grid-row: 4/5;
   grid-column: 1/13;
@@ -215,7 +247,7 @@ html {
 .Footer .Footer__main .Footer__main--menu a {
   text-decoration: none;
 }
-.Footer .Footer__main .Footer__main--menu a:hover {
+.Footer .Footer__main .Footer__main--menu .menu:hover {
   color: #2acfcf;
 }
 .Footer .Footer__main .Footer__main--social {
@@ -239,15 +271,12 @@ html {
 .Footer .Footer__main .Footer__main--social ul a {
   text-decoration: none;
 }
-.Footer .Footer__main .Footer__main--social ul li:hover {
-  background-color: hsl(171, 66%, 44%);
-}
 
 @media screen and (max-width: 375px) {
   .Footer {
     display: grid;
     grid-row: 4/5;
-    grid-column: 1/13;
+    grid-column: 1/9;
     margin-top: 5rem;
     display: flex;
     flex-flow: nowrap;
@@ -300,7 +329,7 @@ html {
   .Footer .Footer__main .Footer__main--menu article li a {
     text-decoration: none;
   }
-  .Footer .Footer__main .Footer__main--menu article li a:hover {
+  .Footer .Footer__main .Footer__main--menu article li .menu:hover {
     color: #2acfcf;
   }
   .Footer .Footer__main .Footer__main--social {
@@ -325,7 +354,7 @@ html {
   .Footer .Footer__main .Footer__main--social ul li a {
     text-decoration: none;
   }
-  .Footer .Footer__main .Footer__main--social ul li a:hover {
+  .Footer .Footer__main .Footer__main--social ul li .menu:hover {
     color: #2acfcf;
     background-color: hsl(171, 66%, 44%);
   }

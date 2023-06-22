@@ -1,6 +1,7 @@
 @use '_h-colors' as C;
-
 @use 'mixins' as M;
+@use '_h-breakPoints.scss' as BP;
+
 .Header {
     grid-row: 1/2;
     grid-column: 1/13;
@@ -24,4 +25,16 @@
         }
     }
 
+}
+
+@media screen and (max-width: BP.$breakPointMobile) {
+    .Header {
+        grid-row: 1/2;
+        grid-column: 1/9;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
 }

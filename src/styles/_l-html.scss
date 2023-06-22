@@ -22,4 +22,19 @@ html {
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 500px repeat(1, 1fr);
   align-items: center;
+
+  background-image: url(./images/bg-header-desktop.png);
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: BP.$breakPointMobile) {
+  
+  .Body{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 100px repeat(1fr);
+    align-items: center;
+    
+    background-image: url(./images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+  }
 }

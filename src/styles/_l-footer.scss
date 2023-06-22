@@ -48,7 +48,7 @@
         text-decoration: none;
       }
 
-      a:hover {
+      .menu:hover {
         color: #2acfcf;
       }
     }
@@ -76,9 +76,6 @@
           text-decoration: none;
         }
 
-        li:hover {
-          background-color: C.$c-strongCyan;
-        }
       }
     }
   }
@@ -92,7 +89,7 @@
   .Footer {
     display: grid;
     grid-row: 4/5;
-    grid-column: 1/13;
+    grid-column: 1/9;
     margin-top: 5rem;
     display: flex;
     flex-flow: nowrap;
@@ -148,7 +145,7 @@
 
             }
 
-            & a:hover {
+            & .menu:hover {
               color: #2acfcf;
             }
           }
@@ -178,7 +175,7 @@
               text-decoration: none;
             }
 
-            & a:hover {
+            & .menu:hover {
               color: #2acfcf;
               background-color: C.$c-strongCyan;
             }

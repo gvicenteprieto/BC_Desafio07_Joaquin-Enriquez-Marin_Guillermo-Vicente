@@ -1,4 +1,5 @@
 @use 'mixins' as M;
+@use '_h-breakPoints.scss' as BP;
 .Aside {
 
     grid-row: 3/4;
@@ -29,4 +30,10 @@
 
     }
 
+}
+
+@media screen and (max-width: BP.$breakPointMobile) {
+    .Aside{
+        grid-column: 1/9;
+    }
 }

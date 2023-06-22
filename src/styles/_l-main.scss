@@ -1,5 +1,6 @@
 @use 'mixins' as M;
 @use '_h-colors' as C;
+@use '_h-breakPoints.scss' as BP;
 
 .Main{
     grid-row: 2/3;
@@ -84,5 +85,13 @@
             }
 
         }
+    }
+}
+
+@media screen and (max-width: BP.$breakPointMobile) {
+    .Main{
+        grid-row: 2/3;
+        grid-column: 1/9;
+
     }
 }
