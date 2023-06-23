@@ -9,7 +9,7 @@ html {
 .Body {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 500px repeat(1, 1fr);
+  grid-template-rows: repeat(1, 1fr);
   align-items: center;
   background-image: url(./images/bg-header-desktop.png);
   background-repeat: no-repeat;
@@ -18,7 +18,7 @@ html {
 @media screen and (max-width: 375px) {
   .Body {
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(9, 1fr);
     grid-template-rows: 100px repeat(1fr);
     align-items: center;
     background-image: url(./images/bg-header-mobile.png);
@@ -26,8 +26,10 @@ html {
   }
 }
 .Header {
+  display: grid;
   grid-row: 1/2;
-  grid-column: 1/13;
+  grid-column: 1/12;
+  margin-top: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -62,16 +64,70 @@ html {
 
 @media screen and (max-width: 375px) {
   .Header {
+    display: grid;
     grid-row: 1/2;
     grid-column: 1/9;
+    padding-top: 5rem;
+  }
+  .Header section {
+    width: 100%;
+  }
+  .Header section article {
+    margin: 0;
+    padding: 0;
+  }
+  .Header section article aside {
+    margin: 0;
+    padding: 0;
+  }
+  .Header section article div {
+    margin: 0;
+    padding: 0 3rem 0 3rem;
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+  }
+  .Header section article div header {
+    margin: 0;
+    padding: 0;
+  }
+  .Header section article div header h1 {
+    line-height: 2rem;
+    font-size: 1.5rem;
+  }
+  .Header section article div main {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+  }
+  .Header section article div main p {
+    line-height: 1.5rem;
+    font-size: 1rem;
+  }
+  .Header section article footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    line-height: 1.5rem;
+    gap: 1rem;
+    padding: 0rem;
+    width: 100%;
   }
 }
 .Main {
+  display: grid;
   grid-row: 2/3;
-  grid-column: 1/13;
+  grid-column: 1/12;
+  margin-top: 5rem;
 }
 .Main section {
   display: grid;
@@ -94,12 +150,13 @@ html {
 }
 .Main section article .images {
   scale: 2;
+  margin-left: -5rem;
   margin-top: 15rem;
   margin-bottom: 15rem;
 }
 .Main section article:nth-child(1) {
   grid-row: 1/2;
-  grid-column: 1/13;
+  grid-column: 1/12;
 }
 .Main section article:nth-child(1) div:nth-child(2) {
   display: flex;
@@ -123,11 +180,11 @@ html {
 }
 .Main section article:nth-child(2) {
   grid-row: 2/3;
-  grid-column: 1/13;
+  grid-column: 1/12;
 }
 .Main section article:nth-child(3) {
   grid-row: 3/4;
-  grid-column: 1/13;
+  grid-column: 1/12;
 }
 .Main section article:nth-child(3) div:nth-child(2) {
   margin-top: 2.5rem;
@@ -152,13 +209,149 @@ html {
 
 @media screen and (max-width: 375px) {
   .Main {
+    display: grid;
     grid-row: 2/3;
     grid-column: 1/9;
+    padding: 1rem;
+  }
+  .Main section:nth-child(1) {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0rem;
+  }
+  .Main section:nth-child(1) div:nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .Main section:nth-child(1) div:nth-child(1) article {
+    width: 600px;
+  }
+  .Main section:nth-child(1) div:nth-child(1) article header h1 h2 h3 {
+    font-weight: 600;
+  }
+  .Main section:nth-child(1) div:nth-child(1) article main p {
+    color: hsl(201, 11%, 66%);
+  }
+  .Main section:nth-child(1) div:nth-child(1) article p {
+    margin: 1rem;
+    font-size: 1rem;
+    text-align: center;
+  }
+  .Main section:nth-child(1) div:nth-child(2) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0rem;
+  }
+  .Main section:nth-child(1) div:nth-child(2) .images {
+    scale: 1;
+    margin: 2rem 1rem;
+  }
+  .Main section:nth-child(1) div:nth-child(2) main {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 0rem;
+    margin: 0 2rem;
+    width: auto;
+  }
+  .Main section:nth-child(1) div:nth-child(2) main article {
+    text-align: center;
+  }
+  .Main section:nth-child(1) div:nth-child(2) main article main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0.5rem 2rem;
+    text-align: center;
+  }
+  .Main section:nth-child(1) div:nth-child(2) main article main p {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .Main section .scndChild {
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+  }
+  .Main section .scndChild div:nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .Main section .scndChild div:nth-child(1) article {
+    width: 600px;
+  }
+  .Main section .scndChild div:nth-child(1) article header h1 h2 h3 {
+    font-weight: 600;
+  }
+  .Main section .scndChild div:nth-child(1) article main p {
+    color: hsl(201, 11%, 66%);
+  }
+  .Main section .scndChild div:nth-child(1) article p {
+    margin: 1rem;
+    font-size: 1rem;
+    text-align: center;
+  }
+  .Main section .scndChild div:nth-child(2) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0rem;
+  }
+  .Main section .scndChild div:nth-child(2) .images {
+    scale: 1 0.75;
+    margin: 0.5rem;
+  }
+  .Main section .scndChild div:nth-child(2) main {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 0rem;
+    margin: 0 2rem;
+    width: auto;
+  }
+  .Main section .scndChild div:nth-child(2) main article {
+    text-align: center;
+  }
+  .Main section .scndChild div:nth-child(2) main article main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0.5rem 2rem;
+    text-align: center;
+  }
+  .Main section .scndChild div:nth-child(2) main article main p {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .Main section .lstChild div:nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .Main section .lstChild div:nth-child(1) article {
+    width: auto;
+    width: 600px;
+    text-align: center;
+  }
+  .Main section .lstChild div:nth-child(1) article header h1 h2 h3 {
+    font-weight: 600;
+  }
+  .Main section .lstChild div:nth-child(1) article main p {
+    color: hsl(201, 11%, 66%);
   }
 }
 .Aside {
+  display: grid;
   grid-row: 3/4;
-  grid-column: 1/13;
+  grid-column: 1/12;
 }
 .Aside section:nth-child(1) {
   display: flex;
@@ -200,12 +393,68 @@ html {
 
 @media screen and (max-width: 375px) {
   .Aside {
-    grid-column: 1/9;
+    display: grid;
+    grid-column: 1/12;
+  }
+  .Aside section:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3rem;
+    gap: 5rem;
+  }
+  .Aside section:nth-child(2) article {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+  }
+  .Aside section:nth-child(2) article div {
+    width: 600px;
+  }
+  .Aside section:nth-child(2) article div header h1 h2 {
+    font-weight: 600;
+  }
+  .Aside section:nth-child(2) article div main p {
+    color: hsl(201, 11%, 66%);
+  }
+  .Aside section:nth-child(2) article div footer {
+    margin-top: 2.5rem;
+  }
+  .Aside section:nth-child(2) article div footer button {
+    padding: 0.8rem;
+    margin-right: 1rem;
+    border-radius: 2rem;
+    color: #ffffff;
+  }
+  .Aside section:nth-child(2) article div footer button:nth-child(1) {
+    background-color: hsl(171, 66%, 44%);
+  }
+  .Aside section:nth-child(2) article div footer button:nth-child(2) {
+    background-color: hsl(233, 100%, 69%);
+  }
+  .Aside section:nth-child(2) article div header {
+    font-size: 1rem;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+  }
+  .Aside section:nth-child(2) article footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    line-height: 1.5rem;
+    gap: 1rem;
+    padding: 0.5rem;
+    width: 100%;
   }
 }
 .Footer {
+  display: grid;
   grid-row: 4/5;
-  grid-column: 1/13;
+  grid-column: 1/12;
   padding: 1rem;
   background-color: #efeeee;
   margin-top: 5rem;
@@ -276,7 +525,7 @@ html {
   .Footer {
     display: grid;
     grid-row: 4/5;
-    grid-column: 1/9;
+    grid-column: 1/12;
     margin-top: 5rem;
     display: flex;
     flex-flow: nowrap;

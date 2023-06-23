@@ -1,14 +1,13 @@
-@use 'mixins' as M;
-@use '_h-breakPoints.scss' as BP;
+@use "mixins" as M;
+@use "_h-breakPoints.scss" as BP;
+
 .Aside {
-
+    display: grid;
     grid-row: 3/4;
-    grid-column: 1/13;
+    grid-column: 1/12;
 
-
-
-    & section{
-        &:nth-child(1){
+    & section {
+        &:nth-child(1) {
             display: flex;
             flex-wrap: nowrap;
             justify-content: space-evenly;
@@ -17,23 +16,65 @@
             gap: 2rem;
         }
 
-        &:nth-child(2){
-            & article{
+        &:nth-child(2) {
+            & article {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                & div{
+
+                & div {
                     @include M.component;
                 }
             }
         }
-
     }
-
 }
 
 @media screen and (max-width: BP.$breakPointMobile) {
-    .Aside{
-        grid-column: 1/9;
+    .Aside {
+        display: grid;
+        grid-column: 1/12;
+
+        & section {
+            &:nth-child(1) {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                padding: 3rem;
+                gap: 5rem;
+            }
+
+            &:nth-child(2) {
+                & article {
+                    display: flex;
+                    flex-wrap: nowrap;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 3rem;
+
+                    & div {
+                        @include M.component;
+
+                        & header {
+                            font-size: 1rem;
+                            line-height: 2rem;
+                            margin-bottom: 2rem;
+                        }
+                    }
+
+                    & footer {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: stretch;
+                        line-height: 1.5rem;
+                        gap: 1rem;
+                        padding: 0.5rem;
+                        width: 100%;
+                    }
+                }
+            }
+        }
     }
 }

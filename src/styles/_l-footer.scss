@@ -2,8 +2,9 @@
 @use '_h-breakPoints' as BP;
 
 .Footer {
+  display: grid;
   grid-row: 4/5;
-  grid-column: 1/13;
+  grid-column: 1/12;
   padding: 1rem;
   background-color: #efeeee;
   margin-top: 5rem;
@@ -82,14 +83,10 @@
 }
 
 @media screen and (max-width: BP.$breakPointMobile) {
-  // .Body {
-  //   background-color: rgb(80, 252, 255);
-  // }
-
   .Footer {
     display: grid;
     grid-row: 4/5;
-    grid-column: 1/9;
+    grid-column: 1/12;
     margin-top: 5rem;
     display: flex;
     flex-flow: nowrap;
