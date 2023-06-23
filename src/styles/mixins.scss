@@ -1,10 +1,31 @@
 @use '_h-colors' as C;
 
-@mixin component {
-    width: 600px;
+@mixin grid ($colums, $rows) {
+    #div{
+        display: grid;
+        grid-template-columns: $colums;
+        grid-template-rows: $rows;
+        align-items: center;
+        overflow-x: hidden;
+    }
+}
+
+@mixin displays ($display, $justify:false, $align:false, $flow:false, $direction:false, $wrap:false){
+
+    display: $display;
+
+    @if $justify    {   justify-content:    $justify;      };
+    @if $align      {    align-items:       $align         };
+    @if $flow       {   flex-flow:          $flow          };
+    @if $direction  {   flex-direction:     $direction     };
+    @if $wrap       {   flex-wrap:          $wrap          };
+}
+
+@mixin component($width) {
+    width: $width;
 
     & header{
-        & h1 h2{font-weight: 600;}
+        & h1 h2 h3{font-weight: 600;}
     }
 
     & main{
@@ -26,17 +47,5 @@
                 background-color: C.$c-lightBlue;
             }
         }
-    }
-}
-
-@mixin titles ($width) {
-    width: $width;
-
-    & header{
-        & h1 h2 h3{font-weight: 600;}
-    }
-
-    & main{
-        & p{color: C.$c-grayishBlue;}
     }
 }
