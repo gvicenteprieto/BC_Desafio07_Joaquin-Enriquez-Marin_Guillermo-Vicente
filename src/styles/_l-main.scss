@@ -62,6 +62,10 @@
 
                 & div:nth-child(2) {
                     margin-top: 2.5rem;
+                    
+                    & article:hover{
+                        background-color: C.$c-grayishBlue-shadow;
+                    }
 
                     & main {
                         & section {
@@ -210,6 +214,11 @@
                     width: auto;
                     @include M.component(350px);
                     text-align: center;
+                }
+            }
+            & div:nth-child(2){
+                & article:hover{
+                    background-color: C.$c-grayishBlue;
                 }
             }
         }

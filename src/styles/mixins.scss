@@ -40,11 +40,20 @@
             border-radius: 2rem;
             color: C.$c-white;
 
+
+
             &:nth-child(1){
                 background-color: C.$c-strongCyan;
+                &:hover{
+                    box-shadow:  0 0.5rem C.$c-strongCyan-shadow;
+                }
+                
             }
             &:nth-child(2){
                 background-color: C.$c-lightBlue;
+                &:hover{
+                    box-shadow: 0 0.5rem C.$c-lightBlue-shadow;
+                }
             }
         }
     }

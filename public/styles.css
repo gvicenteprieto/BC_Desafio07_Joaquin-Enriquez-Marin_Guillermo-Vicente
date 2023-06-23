@@ -63,8 +63,14 @@ html {
 .Header section article div footer button:nth-child(1) {
   background-color: hsl(171, 66%, 44%);
 }
+.Header section article div footer button:nth-child(1):hover {
+  box-shadow: 0 0.5rem hsla(171, 66%, 44%, 0.11);
+}
 .Header section article div footer button:nth-child(2) {
   background-color: hsl(233, 100%, 69%);
+}
+.Header section article div footer button:nth-child(2):hover {
+  box-shadow: 0 0.5rem hsla(233, 100%, 69%, 0.11);
 }
 
 @media screen and (max-width: 375px) {
@@ -111,8 +117,14 @@ html {
   .Header section article div footer button:nth-child(1) {
     background-color: hsl(171, 66%, 44%);
   }
+  .Header section article div footer button:nth-child(1):hover {
+    box-shadow: 0 0.5rem hsla(171, 66%, 44%, 0.11);
+  }
   .Header section article div footer button:nth-child(2) {
     background-color: hsl(233, 100%, 69%);
+  }
+  .Header section article div footer button:nth-child(2):hover {
+    box-shadow: 0 0.5rem hsla(233, 100%, 69%, 0.11);
   }
   .Header section article div header {
     margin: 0;
@@ -188,8 +200,14 @@ html {
 .Main section article div:nth-child(1) article footer button:nth-child(1) {
   background-color: hsl(171, 66%, 44%);
 }
+.Main section article div:nth-child(1) article footer button:nth-child(1):hover {
+  box-shadow: 0 0.5rem hsla(171, 66%, 44%, 0.11);
+}
 .Main section article div:nth-child(1) article footer button:nth-child(2) {
   background-color: hsl(233, 100%, 69%);
+}
+.Main section article div:nth-child(1) article footer button:nth-child(2):hover {
+  box-shadow: 0 0.5rem hsla(233, 100%, 69%, 0.11);
 }
 .Main section article .images {
   scale: 2;
@@ -236,8 +254,14 @@ html {
 .Main section article:nth-child(1) div:nth-child(2) main article footer button:nth-child(1) {
   background-color: hsl(171, 66%, 44%);
 }
+.Main section article:nth-child(1) div:nth-child(2) main article footer button:nth-child(1):hover {
+  box-shadow: 0 0.5rem hsla(171, 66%, 44%, 0.11);
+}
 .Main section article:nth-child(1) div:nth-child(2) main article footer button:nth-child(2) {
   background-color: hsl(233, 100%, 69%);
+}
+.Main section article:nth-child(1) div:nth-child(2) main article footer button:nth-child(2):hover {
+  box-shadow: 0 0.5rem hsla(233, 100%, 69%, 0.11);
 }
 .Main section article:nth-child(2) {
   grid-row: 2/3;
@@ -249,6 +273,9 @@ html {
 }
 .Main section article:nth-child(3) div:nth-child(2) {
   margin-top: 2.5rem;
+}
+.Main section article:nth-child(3) div:nth-child(2) article:hover {
+  background-color: hsla(202, 11%, 66%, 0.199);
 }
 .Main section article:nth-child(3) div:nth-child(2) main section {
   display: flex;
@@ -276,8 +303,14 @@ html {
 .Main section article:nth-child(3) div:nth-child(2) main section article footer button:nth-child(1) {
   background-color: hsl(171, 66%, 44%);
 }
+.Main section article:nth-child(3) div:nth-child(2) main section article footer button:nth-child(1):hover {
+  box-shadow: 0 0.5rem hsla(171, 66%, 44%, 0.11);
+}
 .Main section article:nth-child(3) div:nth-child(2) main section article footer button:nth-child(2) {
   background-color: hsl(233, 100%, 69%);
+}
+.Main section article:nth-child(3) div:nth-child(2) main section article footer button:nth-child(2):hover {
+  box-shadow: 0 0.5rem hsla(233, 100%, 69%, 0.11);
 }
 .Main section article:nth-child(3) div:nth-child(2) main section article aside {
   margin: 2.5rem;
@@ -327,8 +360,14 @@ html {
   .Main section:nth-child(1) div:nth-child(1) article footer button:nth-child(1) {
     background-color: hsl(171, 66%, 44%);
   }
+  .Main section:nth-child(1) div:nth-child(1) article footer button:nth-child(1):hover {
+    box-shadow: 0 0.5rem hsla(171, 66%, 44%, 0.11);
+  }
   .Main section:nth-child(1) div:nth-child(1) article footer button:nth-child(2) {
     background-color: hsl(233, 100%, 69%);
+  }
+  .Main section:nth-child(1) div:nth-child(1) article footer button:nth-child(2):hover {
+    box-shadow: 0 0.5rem hsla(233, 100%, 69%, 0.11);
   }
   .Main section:nth-child(1) div:nth-child(1) article p {
     margin: 1rem;
@@ -406,8 +445,14 @@ html {
   .Main section .scndChild div:nth-child(1) article footer button:nth-child(1) {
     background-color: hsl(171, 66%, 44%);
   }
+  .Main section .scndChild div:nth-child(1) article footer button:nth-child(1):hover {
+    box-shadow: 0 0.5rem hsla(171, 66%, 44%, 0.11);
+  }
   .Main section .scndChild div:nth-child(1) article footer button:nth-child(2) {
     background-color: hsl(233, 100%, 69%);
+  }
+  .Main section .scndChild div:nth-child(1) article footer button:nth-child(2):hover {
+    box-shadow: 0 0.5rem hsla(233, 100%, 69%, 0.11);
   }
   .Main section .scndChild div:nth-child(1) article p {
     margin: 1rem;
@@ -483,8 +528,17 @@ html {
   .Main section .lstChild div:nth-child(1) article footer button:nth-child(1) {
     background-color: hsl(171, 66%, 44%);
   }
+  .Main section .lstChild div:nth-child(1) article footer button:nth-child(1):hover {
+    box-shadow: 0 0.5rem hsla(171, 66%, 44%, 0.11);
+  }
   .Main section .lstChild div:nth-child(1) article footer button:nth-child(2) {
     background-color: hsl(233, 100%, 69%);
+  }
+  .Main section .lstChild div:nth-child(1) article footer button:nth-child(2):hover {
+    box-shadow: 0 0.5rem hsla(233, 100%, 69%, 0.11);
+  }
+  .Main section .lstChild div:nth-child(2) article:hover {
+    background-color: hsl(201, 11%, 66%);
   }
 }
 .Aside {
@@ -532,8 +586,14 @@ html {
 .Aside section:nth-child(2) article div footer button:nth-child(1) {
   background-color: hsl(171, 66%, 44%);
 }
+.Aside section:nth-child(2) article div footer button:nth-child(1):hover {
+  box-shadow: 0 0.5rem hsla(171, 66%, 44%, 0.11);
+}
 .Aside section:nth-child(2) article div footer button:nth-child(2) {
   background-color: hsl(233, 100%, 69%);
+}
+.Aside section:nth-child(2) article div footer button:nth-child(2):hover {
+  box-shadow: 0 0.5rem hsla(233, 100%, 69%, 0.11);
 }
 
 @media screen and (max-width: 375px) {
@@ -579,8 +639,14 @@ html {
   .Aside section:nth-child(2) article div footer button:nth-child(1) {
     background-color: hsl(171, 66%, 44%);
   }
+  .Aside section:nth-child(2) article div footer button:nth-child(1):hover {
+    box-shadow: 0 0.5rem hsla(171, 66%, 44%, 0.11);
+  }
   .Aside section:nth-child(2) article div footer button:nth-child(2) {
     background-color: hsl(233, 100%, 69%);
+  }
+  .Aside section:nth-child(2) article div footer button:nth-child(2):hover {
+    box-shadow: 0 0.5rem hsla(233, 100%, 69%, 0.11);
   }
   .Aside section:nth-child(2) article div header {
     font-size: 1rem;
